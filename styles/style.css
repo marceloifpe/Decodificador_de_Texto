@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Open+Sans:ital,wght@1,300..800&display=swap');
+
+:root {
+    --corprincipal: #EEEDEB;
+    --corsecundaria: #BFCCB5;
+    --corterciaria: #939185;
+    --corfundo: #2F3645;
+}
+
+body {
+    background-color: var(--corfundo);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: italic;
+    font-variation-settings: "wdth" 100;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2%;
+    gap: 8px;
+}
+
+.cabecalho h1 {
+    color: var(--corprincipal);
+}
+
+.cabecalho svg {
+    max-width: 700px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    color: aliceblue;
+}
+
+.container_input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container_input .input {
+    width: 400px;
+    height: 330px;
+}
+
+.container_input .alert {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container_input .alert svg {
+    margin-right: 1px;
+}
+
+.container_input .input p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#input-texto {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--corprincipal);
+    background: var(--corsecundaria);
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--corsecundaria);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--corprincipal);
+}
+
+#output span {
+    font-size: 16px;
+    text-align: center;
+}
+
+#output img {
+    max-width: 300px;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.container-btn button {
+    border: 2px solid var(--corprincipal);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.button-criptografar {
+    border: 2px solid black;
+    /* Borda preta */
+    background-color: var(--corsecundaria);
+    /* Fundo do botão */
+    color: black;
+    /* Cor do texto */
+}
+
+.button-descriptografar {
+    border: 2px solid black;
+    /* Borda preta */
+    background-color: var(--corsecundaria);
+    /* Fundo do botão */
+    color: black;
+    /* Cor do texto */
+}
+
+.button-copiar {
+    border: 2px solid var(--corprincipal);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.container-btn button:hover {
+    border: 2px solid var(--corterciaria);
+    background-color: #E6B9A6;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background: var(--corterciaria);
+    color: var(--corprincipal);
+}
+
+.rodape h3 {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.icons ion-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--corsecundaria);
+}
+
+.icons ion-icon:hover {
+    color: #E6B9A6;
+}
